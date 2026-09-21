@@ -588,14 +588,18 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack2_Ground"
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 8.89 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -604,8 +608,8 @@
 					)
 				)
 			)
-			(property "Value" "AudioJack2_Ground"
-				(at 0 6.35 0)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -636,7 +640,7 @@
 					)
 				)
 			)
-			(property "Description" "Audio Jack, 2 Poles (Mono / TS), Grounded Sleeve"
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -647,7 +651,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "audio jack receptacle mono phone headphone TS connector"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -658,7 +662,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Jack*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -669,33 +673,10 @@
 					)
 				)
 			)
-			(symbol "AudioJack2_Ground_0_1"
+			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -2.54 -2.54)
-					(end -3.81 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -2.54 -2.54)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -704,31 +685,50 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -0.635 2.54) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
-					)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "AudioJack2_Ground_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "G"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -737,16 +737,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "S"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -755,16 +755,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "T"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3621,6 +3621,12 @@
 		(uuid "36b23a03-f7a0-4570-9699-e6cb3649643d")
 	)
 	(junction
+		(at 157.48 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d95cf8c-5c8f-4adc-a8af-4de26dc07e95")
+	)
+	(junction
 		(at 123.19 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3687,12 +3693,6 @@
 		(uuid "c0f4acda-466f-48f6-b505-dd9223fa9425")
 	)
 	(junction
-		(at 153.67 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4048a36-bfdd-4104-a3b1-06b095ca59e9")
-	)
-	(junction
 		(at 129.54 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3751,6 +3751,16 @@
 			(type default)
 		)
 		(uuid "0d871e0e-df81-4777-9284-27408e84e285")
+	)
+	(wire
+		(pts
+			(xy 165.1 104.14) (xy 157.48 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dfb12aa-b8c0-4ac9-ad6a-eceef060d53a")
 	)
 	(wire
 		(pts
@@ -4154,6 +4164,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 102.87) (xy 165.1 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b18a3f8-872d-4581-9e17-c4fb7332bcf5")
+	)
+	(wire
+		(pts
 			(xy 127 40.64) (xy 127 22.86)
 		)
 		(stroke
@@ -4244,7 +4264,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 104.14) (xy 153.67 105.41)
+			(xy 165.1 104.14) (xy 165.1 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4271,6 +4291,16 @@
 			(type default)
 		)
 		(uuid "79a9c364-c8a9-4d65-8dd2-1ee361ace99e")
+	)
+	(wire
+		(pts
+			(xy 157.48 104.14) (xy 153.67 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c48a30-16f9-4fbd-ad65-d0bfcbb45340")
 	)
 	(wire
 		(pts
@@ -4554,7 +4584,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 107.95) (xy 153.67 107.95)
+			(xy 151.13 107.95) (xy 165.1 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4821,16 +4851,6 @@
 			(type default)
 		)
 		(uuid "f7c757e8-1556-4152-9ef8-e56ebc8a520b")
-	)
-	(wire
-		(pts
-			(xy 157.48 104.14) (xy 153.67 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe1330ba-d82b-439a-8117-cc9b666bc4d7")
 	)
 	(wire
 		(pts
@@ -6125,7 +6145,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 158.75 100.33 180)
+		(at 156.21 102.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6136,7 +6156,7 @@
 		(fields_autoplaced yes)
 		(uuid "295fbcdf-fe9e-48ea-a432-a9a861f19edc")
 		(property "Reference" "#PWR05"
-			(at 158.75 93.98 0)
+			(at 156.21 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6147,7 +6167,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 95.25 0)
+			(at 156.21 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6157,7 +6177,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 100.33 0)
+			(at 156.21 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6168,7 +6188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 100.33 0)
+			(at 156.21 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6179,7 +6199,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 100.33 0)
+			(at 156.21 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6540,6 +6560,91 @@
 			(project "inkBT"
 				(path "/d639bd58-f563-44ff-a906-a8a044dd820d"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 170.18 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d62561c-ca0c-46b8-862b-ad80d3a95cbb")
+		(property "Reference" "J1"
+			(at 172.72 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 172.72 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical"
+			(at 170.18 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 170.18 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0c11d295-ddc7-4d5f-b897-60394555bdf1")
+		)
+		(pin "1"
+			(uuid "caf31544-10c0-4b06-8108-786cb7c1e272")
+		)
+		(pin "3"
+			(uuid "959fa9ed-8beb-419a-a933-d60ff134fe9d")
+		)
+		(instances
+			(project "inkBT"
+				(path "/d639bd58-f563-44ff-a906-a8a044dd820d"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8675,90 +8780,6 @@
 			(project "inkBT"
 				(path "/d639bd58-f563-44ff-a906-a8a044dd820d"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack2_Ground")
-		(at 158.75 105.41 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a17e3733-e7c1-4e0b-88e4-af1db01a05ea")
-		(property "Reference" "J1"
-			(at 163.83 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "AudioJack2_Ground"
-			(at 163.83 107.315 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x03_P1.00mm_Vertical"
-			(at 158.75 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 158.75 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "7f5614ad-a30f-4bf4-a539-73e7a4f66042")
-		)
-		(pin "G"
-			(uuid "c0ca1071-2c7b-4760-8d49-44fda53eda70")
-		)
-		(pin "T"
-			(uuid "e70c4f06-f43d-4d79-bf99-271cbc44466e")
-		)
-		(instances
-			(project "inkBT"
-				(path "/d639bd58-f563-44ff-a906-a8a044dd820d"
-					(reference "J1")
 					(unit 1)
 				)
 			)

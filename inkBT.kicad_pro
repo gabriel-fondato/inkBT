@@ -670,7 +670,7 @@
         "uuid": "d639bd58-f563-44ff-a906-a8a044dd820d"
       }
     ],
-    "used_designators": "R1-6,J2-3,C1-12,#PWR2-24,U1,U4-7,TP1-7",
+    "used_designators": "J1-3,R1-6,C1-12,#PWR2-24,U1,U4-7,TP1-7",
     "variants": []
   },
   "sheets": [
